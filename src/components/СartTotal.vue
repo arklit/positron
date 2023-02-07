@@ -43,7 +43,6 @@ export default {
   border-radius: 5px;
   padding: 35px 30px;
   width: 425px;
-  margin-right: 70px;
 
   &__summ, &__count, &__install, &__total {
     display: flex;

@@ -13,6 +13,7 @@
       :summCount="summCount"
       :install="true"/>
     </div>
+    <swiper-handler/>
   </div>
 </template>
 
@@ -21,18 +22,32 @@ import SumBox from '@/components/SumBox.vue'
 import BreadcrumbsElem from '@/components/BreadcrumbsElem.vue';
 import CartMain from "@/components/СartMain.vue";
 import CartTotal from '@/components/СartTotal.vue';
+import SwiperHandler from "@/components/SwiperHandler.vue"
 export default {
   components: {
-    SumBox, BreadcrumbsElem, CartMain, CartTotal
+    SumBox, BreadcrumbsElem, CartMain, CartTotal, SwiperHandler
   },
   data() {
     return  {
+
+      items: [
+        {
+          name: "Вытяжное устройство G2H",
+          about: "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",
+          count: 1,
+          id: 1,
+          artcl: "G2H1065",
+          img: "@/assets/img/item-1.png",
+          price: 12644
+        }
+      ],
       summa: 10000,
       summCount: 1,
       summTotal: 10000,
       install: true,
     }
   },
+
 }
 </script>
 
